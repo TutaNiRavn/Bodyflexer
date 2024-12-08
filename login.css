@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#bgVideo {
+    position: fixed; /* Fixes the video in place */
+    top: 0;
+    left: 0;
+    min-width: 100%; /* Ensures the video covers the full width */
+    min-height: 100%; /* Ensures the video covers the full height */
+    width: auto; /* Maintains aspect ratio */
+    height: auto; /* Maintains aspect ratio */
+    z-index: -1; /* Places the video behind other content */
+    object-fit: cover; /* Ensures the video covers the entire area */
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: url('') no-repeat center center/cover;
+    overflow: hidden;
+}
+.register-container {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    padding: 40px;
+    width: 350px;
+    text-align: center;
+    color: #fff;
+}
+
+.register-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.login-container {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    padding: 40px;
+    width: 300px;
+    text-align: center;
+    color: #fff;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px 40px 10px 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.input-group input:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 0.2);
+}
+.input-group img {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.input-group .icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    opacity: 0.7;
+}
+
+.remember-me {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.remember-me input {
+    margin-right: 5px;
+}
+
+.btn-register {
+    background-color: #fff;
+    color: #333;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-register:hover {
+    background-color: #ddd;
+}
+.login-link {
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.login-link a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.login-link a:hover {
+    color: #ddd;
+}
+
+.btn-login {
+    background-color: #fff;
+    color: #333;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-login:hover {
+    background-color: #ddd;
+}
+.btn-login a {
+    color: black;
+    text-decoration: underline;
+}
+
+.register {
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.register a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.register a:hover {
+    color: #ddd;
+}
